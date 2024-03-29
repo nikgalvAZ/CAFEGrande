@@ -1,0 +1,5 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+
+#define PARAMS_GETTER_DEF_(id, name) std::shared_ptr<ParamT<id>::T> name() const { return std::static_pointer_cast<ParamT<id>::T>(m_params.at(id)); }
