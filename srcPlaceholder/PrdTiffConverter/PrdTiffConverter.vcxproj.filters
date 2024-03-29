@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="PRDTiffConverter.cpp" />
+    <ClCompile Include="..\backend\File.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FileLoad.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FileSave.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\PrdFileLoad.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TiffFileSave.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Utils.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ConsoleLogger.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Log.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\PrdFileUtils.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Frame.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Option.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\OptionController.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FrameStats.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\PvcamRuntimeLoader.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TaskSet_ComputeFrameStats.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TaskSet_CopyMemory.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\UniqueThreadPool.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\RuntimeLoader.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Task.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TaskSet.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Semaphore.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ThreadPool.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Acquisition.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Camera.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ColorRuntimeLoader.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FakeCamera.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FakeParam.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FakeParams.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FpsLimiter.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FramePool.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Param.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ParamBase.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ParticleLinker.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\PrdFileSave.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\RealCamera.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\RealParams.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Settings.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\SettingsReader.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Timer.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TrackRuntimeLoader.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\exceptions\CameraException.cpp">
+      <Filter>backend\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\exceptions\Exception.cpp">
+      <Filter>backend\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\exceptions\ParamGetException.cpp">
+      <Filter>backend\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\exceptions\ParamSetException.cpp">
+      <Filter>backend\exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\AcquisitionStats.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ParamEnumItem.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ParamInfo.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ParamInfoMap.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ParamValueBase.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\Bitmap.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\BitmapFormat.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TaskSet_ConvertToRgb8.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\ColorUtils.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\FrameProcessor.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TaskSet_FillBitmap.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\TaskSet_FillBitmapValue.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\XoShiRo128Plus.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\RandomPixelCache.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\AllocatorAligned.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\AllocatorDefault.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\backend\AllocatorFactory.cpp">
+      <Filter>backend</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="backend">
+      <UniqueIdentifier>{946ac811-0eae-4e17-880a-295ba7f22d81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="backend\exceptions">
+      <UniqueIdentifier>{0fe075d9-c719-4080-9f77-4be139293342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PVCam">
+      <UniqueIdentifier>{144ad8e4-f7d2-4850-9b25-3f94449487e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pvcam_helper_track">
+      <UniqueIdentifier>{69a05e35-3233-4957-b960-163390f8c8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pvcam_helper_color">
+      <UniqueIdentifier>{048da368-a680-4d70-85c8-26930b6dbbf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{e08c0d7b-b12e-4450-ae1b-782f2eeef72a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="version.h" />
+    <ClInclude Include="resource.h">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\File.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FileLoad.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FileSave.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\PrdFileFormat.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\PrdFileLoad.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TiffFileSave.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Utils.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ConsoleLogger.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Log.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\PrdFileUtils.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Frame.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Option.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\OptionController.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FrameStats.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\PvcamRuntimeLoader.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\PvcamRuntimeLoaderDefs.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TaskSet_ComputeFrameStats.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TaskSet_CopyMemory.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\UniqueThreadPool.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\RuntimeLoader.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Task.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TaskSet.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Semaphore.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ThreadPool.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Acquisition.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Camera.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ColorRuntimeLoader.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FakeCamera.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FakeCameraErrors.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FakeParam.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FakeParamBase.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FakeParams.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FpsLimiter.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FramePool.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ListStatistics.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Param.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamBase.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Params.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParticleLinker.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\PrdFileSave.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\RealCamera.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\RealParams.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Settings.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\SettingsReader.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Timer.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TrackRuntimeLoader.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\exceptions\CameraException.h">
+      <Filter>backend\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\exceptions\Exception.h">
+      <Filter>backend\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\exceptions\ParamGetException.h">
+      <Filter>backend\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\exceptions\ParamSetException.h">
+      <Filter>backend\exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PVCam\master.h">
+      <Filter>PVCam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PVCam\pvcam.h">
+      <Filter>PVCam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pvcam_helper_track\inc\pvcam_helper_track.h">
+      <Filter>pvcam_helper_track</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\AcquisitionStats.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\OptionIds.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamDefinitions.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamEnumItem.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamInfo.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamInfoMap.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamValue.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ParamValueBase.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Bitmap.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\BitmapFormat.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TaskSet_ConvertToRgb8.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\pvcam_helper_color\inc\pvcam_helper_color.h">
+      <Filter>pvcam_helper_color</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\ColorUtils.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\FrameProcessor.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TaskSet_FillBitmap.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\TaskSet_FillBitmapValue.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\XoShiRo128Plus.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\RandomPixelCache.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\Allocator.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\AllocatorAligned.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\AllocatorDefault.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\AllocatorFactory.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\backend\AllocatorType.h">
+      <Filter>backend</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PrdTiffConverter.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DB309D40-1DA7-4CF9-9907-1E2AB8358914}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PVCamTestCli</RootNamespace>
+    <ProjectName>PVCamTestCli</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\bin\win$(PlatformArchitecture)\$(Configuration.toLower())\</OutDir>
+    <IntDir>$(SolutionDir)..\.build\win$(PlatformArchitecture)\$(Configuration.toLower())\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\bin\win$(PlatformArchitecture)\$(Configuration.toLower())\</OutDir>
+    <IntDir>$(SolutionDir)..\.build\win$(PlatformArchitecture)\$(Configuration.toLower())\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\bin\win$(PlatformArchitecture)\$(Configuration.toLower())\</OutDir>
+    <IntDir>$(SolutionDir)..\.build\win$(PlatformArchitecture)\$(Configuration.toLower())\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\bin\win$(PlatformArchitecture)\$(Configuration.toLower())\</OutDir>
+    <IntDir>$(SolutionDir)..\.build\win$(PlatformArchitecture)\$(Configuration.toLower())\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\libtiff\inc;$(SolutionDir)\PVCam;$(SolutionDir)\pvcam_helper_color\inc;$(SolutionDir)\pvcam_helper_track\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerListingLocation>$(IntDir)$(ProjectName)\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</XMLDocumentationFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/std:c++14 /w44062 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libtiff\lib\win$(PlatformArchitecture)\$(Configuration.toLower());%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>call "$(ProjectDir)enforce_version_update.bat" "$(ProjectDir)version.h"</Command>
+      <Message>Checking for updated version...</Message>
+    </PreBuildEvent>
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\libtiff\inc;$(SolutionDir)\PVCam;$(SolutionDir)\pvcam_helper_color\inc;$(SolutionDir)\pvcam_helper_track\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerListingLocation>$(IntDir)$(ProjectName)\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</XMLDocumentationFileName>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalOptions>/std:c++14 /w44062 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libtiff\lib\win$(PlatformArchitecture)\$(Configuration.toLower());%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>call "$(ProjectDir)enforce_version_update.bat" "$(ProjectDir)version.h"</Command>
+      <Message>Checking for updated version...</Message>
+    </PreBuildEvent>
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\libtiff\inc;$(SolutionDir)\PVCam;$(SolutionDir)\pvcam_helper_color\inc;$(SolutionDir)\pvcam_helper_track\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerListingLocation>$(IntDir)$(ProjectName)\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</XMLDocumentationFileName>
+      <AdditionalOptions>/std:c++14 /w44062 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libtiff\lib\win$(PlatformArchitecture)\$(Configuration.toLower());%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>call "$(ProjectDir)enforce_version_update.bat" "$(ProjectDir)version.h"</Command>
+      <Message>Checking for updated version...</Message>
+    </PreBuildEvent>
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NOMINMAX;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)\libtiff\inc;$(SolutionDir)\PVCam;$(SolutionDir)\pvcam_helper_color\inc;$(SolutionDir)\pvcam_helper_track\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AssemblerListingLocation>$(IntDir)$(ProjectName)\%(RelativeDir)</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</ObjectFileName>
+      <XMLDocumentationFileName>$(IntDir)$(ProjectName)\%(RelativeDir)</XMLDocumentationFileName>
+      <AdditionalOptions>/std:c++14 /w44062 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\libtiff\lib\win$(PlatformArchitecture)\$(Configuration.toLower());%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libtiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>call "$(ProjectDir)enforce_version_update.bat" "$(ProjectDir)version.h"</Command>
+      <Message>Checking for updated version...</Message>
+    </PreBuildEvent>
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+    <CustomBuildStep />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\backend\Acquisition.cpp" />
+    <ClCompile Include="..\backend\AcquisitionStats.cpp" />
+    <ClCompile Include="..\backend\AllocatorAligned.cpp" />
+    <ClCompile Include="..\backend\AllocatorDefault.cpp" />
+    <ClCompile Include="..\backend\AllocatorFactory.cpp" />
+    <ClCompile Include="..\backend\Bitmap.cpp" />
+    <ClCompile Include="..\backend\BitmapFormat.cpp" />
+    <ClCompile Include="..\backend\Camera.cpp" />
+    <ClCompile Include="..\backend\ColorRuntimeLoader.cpp" />
+    <ClCompile Include="..\backend\ColorUtils.cpp" />
+    <ClCompile Include="..\backend\ConsoleLogger.cpp" />
+    <ClCompile Include="..\backend\exceptions\CameraException.cpp" />
+    <ClCompile Include="..\backend\exceptions\Exception.cpp" />
+    <ClCompile Include="..\backend\exceptions\ParamGetException.cpp" />
+    <ClCompile Include="..\backend\exceptions\ParamSetException.cpp" />
+    <ClCompile Include="..\backend\FakeCamera.cpp" />
+    <ClCompile Include="..\backend\FakeParam.cpp" />
+    <ClCompile Include="..\backend\FakeParams.cpp" />
+    <ClCompile Include="..\backend\File.cpp" />
+    <ClCompile Include="..\backend\FileLoad.cpp" />
+    <ClCompile Include="..\backend\FileSave.cpp" />
+    <ClCompile Include="..\backend\FpsLimiter.cpp" />
+    <ClCompile Include="..\backend\Frame.cpp" />
+    <ClCompile Include="..\backend\FramePool.cpp" />
+    <ClCompile Include="..\backend\FrameProcessor.cpp" />
+    <ClCompile Include="..\backend\FrameStats.cpp" />
+    <ClCompile Include="..\backend\Log.cpp" />
+    <ClCompile Include="..\backend\Option.cpp" />
+    <ClCompile Include="..\backend\OptionController.cpp" />
+    <ClCompile Include="..\backend\Param.cpp" />
+    <ClCompile Include="..\backend\ParamBase.cpp" />
+    <ClCompile Include="..\backend\ParamEnumItem.cpp" />
+    <ClCompile Include="..\backend\ParamInfo.cpp" />
+    <ClCompile Include="..\backend\ParamInfoMap.cpp" />
+    <ClCompile Include="..\backend\ParamValueBase.cpp" />
+    <ClCompile Include="..\backend\ParticleLinker.cpp" />
+    <ClCompile Include="..\backend\PrdFileLoad.cpp" />
+    <ClCompile Include="..\backend\PrdFileSave.cpp" />
+    <ClCompile Include="..\backend\PrdFileUtils.cpp" />
+    <ClCompile Include="..\backend\PvcamRuntimeLoader.cpp" />
+    <ClCompile Include="..\backend\RandomPixelCache.cpp" />
+    <ClCompile Include="..\backend\RealCamera.cpp" />
+    <ClCompile Include="..\backend\RealParams.cpp" />
+    <ClCompile Include="..\backend\RuntimeLoader.cpp" />
+    <ClCompile Include="..\backend\Semaphore.cpp" />
+    <ClCompile Include="..\backend\Settings.cpp" />
+    <ClCompile Include="..\backend\SettingsReader.cpp" />
+    <ClCompile Include="..\backend\Task.cpp" />
+    <ClCompile Include="..\backend\TaskSet.cpp" />
+    <ClCompile Include="..\backend\TaskSet_ComputeFrameStats.cpp" />
+    <ClCompile Include="..\backend\TaskSet_ConvertToRgb8.cpp" />
+    <ClCompile Include="..\backend\TaskSet_CopyMemory.cpp" />
+    <ClCompile Include="..\backend\TaskSet_FillBitmap.cpp" />
+    <ClCompile Include="..\backend\TaskSet_FillBitmapValue.cpp" />
+    <ClCompile Include="..\backend\ThreadPool.cpp" />
+    <ClCompile Include="..\backend\TiffFileSave.cpp" />
+    <ClCompile Include="..\backend\Timer.cpp" />
+    <ClCompile Include="..\backend\TrackRuntimeLoader.cpp" />
+    <ClCompile Include="..\backend\UniqueThreadPool.cpp" />
+    <ClCompile Include="..\backend\Utils.cpp" />
+    <ClCompile Include="..\backend\XoShiRo128Plus.cpp" />
+    <ClCompile Include="PVCamTestCli.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\backend\Acquisition.h" />
+    <ClInclude Include="..\backend\AcquisitionStats.h" />
+    <ClInclude Include="..\backend\Allocator.h" />
+    <ClInclude Include="..\backend\AllocatorAligned.h" />
+    <ClInclude Include="..\backend\AllocatorDefault.h" />
+    <ClInclude Include="..\backend\AllocatorFactory.h" />
+    <ClInclude Include="..\backend\AllocatorType.h" />
+    <ClInclude Include="..\backend\Bitmap.h" />
+    <ClInclude Include="..\backend\BitmapFormat.h" />
+    <ClInclude Include="..\backend\Camera.h" />
+    <ClInclude Include="..\backend\ColorRuntimeLoader.h" />
+    <ClInclude Include="..\backend\ColorUtils.h" />
+    <ClInclude Include="..\backend\ConsoleLogger.h" />
+    <ClInclude Include="..\backend\exceptions\CameraException.h" />
+    <ClInclude Include="..\backend\exceptions\Exception.h" />
+    <ClInclude Include="..\backend\exceptions\ParamGetException.h" />
+    <ClInclude Include="..\backend\exceptions\ParamSetException.h" />
+    <ClInclude Include="..\backend\FakeCamera.h" />
+    <ClInclude Include="..\backend\FakeCameraErrors.h" />
+    <ClInclude Include="..\backend\FakeParam.h" />
+    <ClInclude Include="..\backend\FakeParamBase.h" />
+    <ClInclude Include="..\backend\FakeParams.h" />
+    <ClInclude Include="..\backend\File.h" />
+    <ClInclude Include="..\backend\FileLoad.h" />
+    <ClInclude Include="..\backend\FileSave.h" />
+    <ClInclude Include="..\backend\FpsLimiter.h" />
+    <ClInclude Include="..\backend\Frame.h" />
+    <ClInclude Include="..\backend\FramePool.h" />
+    <ClInclude Include="..\backend\FrameProcessor.h" />
+    <ClInclude Include="..\backend\FrameStats.h" />
+    <ClInclude Include="..\backend\ListStatistics.h" />
+    <ClInclude Include="..\backend\Log.h" />
+    <ClInclude Include="..\backend\Option.h" />
+    <ClInclude Include="..\backend\OptionController.h" />
+    <ClInclude Include="..\backend\OptionIds.h" />
+    <ClInclude Include="..\backend\Param.h" />
+    <ClInclude Include="..\backend\ParamBase.h" />
+    <ClInclude Include="..\backend\ParamDefinitions.h" />
+    <ClInclude Include="..\backend\ParamEnumItem.h" />
+    <ClInclude Include="..\backend\ParamInfo.h" />
+    <ClInclude Include="..\backend\ParamInfoMap.h" />
+    <ClInclude Include="..\backend\Params.h" />
+    <ClInclude Include="..\backend\ParamValue.h" />
+    <ClInclude Include="..\backend\ParamValueBase.h" />
+    <ClInclude Include="..\backend\ParticleLinker.h" />
+    <ClInclude Include="..\backend\PrdFileFormat.h" />
+    <ClInclude Include="..\backend\PrdFileLoad.h" />
+    <ClInclude Include="..\backend\PrdFileSave.h" />
+    <ClInclude Include="..\backend\PrdFileUtils.h" />
+    <ClInclude Include="..\backend\PvcamRuntimeLoader.h" />
+    <ClInclude Include="..\backend\PvcamRuntimeLoaderDefs.h" />
+    <ClInclude Include="..\backend\RandomPixelCache.h" />
+    <ClInclude Include="..\backend\RealCamera.h" />
+    <ClInclude Include="..\backend\RealParams.h" />
+    <ClInclude Include="..\backend\RuntimeLoader.h" />
+    <ClInclude Include="..\backend\Semaphore.h" />
+    <ClInclude Include="..\backend\Settings.h" />
+    <ClInclude Include="..\backend\SettingsReader.h" />
+    <ClInclude Include="..\backend\Task.h" />
+    <ClInclude Include="..\backend\TaskSet.h" />
+    <ClInclude Include="..\backend\TaskSet_ComputeFrameStats.h" />
+    <ClInclude Include="..\backend\TaskSet_ConvertToRgb8.h" />
+    <ClInclude Include="..\backend\TaskSet_CopyMemory.h" />
+    <ClInclude Include="..\backend\TaskSet_FillBitmap.h" />
+    <ClInclude Include="..\backend\TaskSet_FillBitmapValue.h" />
+    <ClInclude Include="..\backend\ThreadPool.h" />
+    <ClInclude Include="..\backend\TiffFileSave.h" />
+    <ClInclude Include="..\backend\Timer.h" />
+    <ClInclude Include="..\backend\TrackRuntimeLoader.h" />
+    <ClInclude Include="..\backend\UniqueThreadPool.h" />
+    <ClInclude Include="..\backend\Utils.h" />
+    <ClInclude Include="..\backend\XoShiRo128Plus.h" />
+    <ClInclude Include="..\PVCam\master.h" />
+    <ClInclude Include="..\PVCam\pvcam.h" />
+    <ClInclude Include="..\pvcam_helper_color\inc\pvcam_helper_color.h" />
+    <ClInclude Include="..\pvcam_helper_track\inc\pvcam_helper_track.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PVCamTestCli.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
